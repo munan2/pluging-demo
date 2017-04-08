@@ -1,0 +1,77 @@
+.carousel-container{
+    width: 20000px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.imgs{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.carousel-container img{
+    float: left;
+    display: none;
+}
+.carousel-container img.selected{
+    display: block;
+}
+
+.carousel-btns{
+    position: absolute;
+    bottom: 10px;
+}
+.carousel-btns.leftbottom{
+   left: 10px;
+}
+.carousel-btns.rightbottom{
+   right: 10px;
+}
+.carousel-btns li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    margin-left: 5px;
+}
+.carousel-btns li.quare{
+    line-height: 20px;
+    text-align: center;
+}
+.carousel-btns li.circle{
+    border-radius: 50%;
+}
+.carousel-btns li.selected{
+    background: orange;
+}
+.carousel-prevnext span{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    line-height: 20px;
+    text-align: center;
+}
+.carousel-prev.center{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.carousel-next.center{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.carousel-prev.bottom{
+    position: absolute;
+    right:40px; 
+    bottom: 10px;
+}
+.carousel-next.bottom{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+
