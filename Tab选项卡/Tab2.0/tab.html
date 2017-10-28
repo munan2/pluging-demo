@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tab</title>
+	<link rel="stylesheet" href="tab.css">
+</head>
+<body>
+	<div class="tab-box">
+		<ul class="tab-container">
+			<li data-uid="0" class="selected">111</li>
+			<li data-uid="1">222</li>
+			<li data-uid="2">333</li>
+		</ul>
+		<div class="subtab-container">
+		</div>
+	</div>
+	<div class="tab-box-two">
+		<ul class="tab-container">
+			<li data-uid="0" class="selected">yes</li>
+			<li data-uid="1">no</li>
+			<li data-uid="2">not sure</li>
+		</ul>
+		<div class="subtab-container">
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+	<script src="./tab.js"></script>
+	<script>
+		var tabBox = document.getElementsByClassName('tab-box')[0];
+		var tabBoxTwo = document.getElementsByClassName('tab-box-two')[0];
+		var settings = {
+				dom: 'tab-box',
+				click: true,
+				hover: false,
+				ajaxUrl: './student.json'
+			};
+
+		var settingsTwo = {
+			dom: 'tab-box-two',
+			click: false,
+			hover: true,
+			ajaxUrl: './teacher.json'
+		};
+		var box = new Tab(settings);
+		var boxTwo = new Tab(settingsTwo);
+	</script>
+</body>
+</html>
